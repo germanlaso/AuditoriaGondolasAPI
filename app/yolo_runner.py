@@ -15,7 +15,7 @@ model = YOLO(BEST_WEIGHTS)
 
 def infer(pil_img):
     results = model.predict(
-        img=pil_img,
+        source=pil_img,
         conf=CONF, iou=IOU, imgsz=IMG_SZ,
         max_det=MAX_DET, augment=AUGMENT,
         verbose=False
