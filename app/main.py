@@ -126,5 +126,5 @@ def predict_base64(body: PredictBase64Body):
         return JSONResponse(payload)
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
-``
+
 
